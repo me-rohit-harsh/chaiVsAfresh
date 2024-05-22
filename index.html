@@ -78,26 +78,33 @@
             width: 100px;
             height: 100px;
         }
-        .container-fluid {
-            margin-top: 80px;
+
+       
+
+        @media (max-width: 767.98px) {
+            .sm-img {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid  shadow">
+    <div class="container-fluid   my-5">
 
         <div class="table-container shadow">
             <div class="header">
-              <div class="row"><div class="col-3">
-                <img src="logo.png" alt="">
-            </div>
-            <div class="col-6">
-                <h1 style="color: #000; margin-bottom: 10px;">Comparison Chart</h1>
-                <h1 class="vs" style="font-weight: 1000;"><strong>चाय vs अफ्रेश</strong></h1>
-            </div>
-            <div class="col-3"><img src="logo.png" alt=""></div></div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 ">
+                        <img src="logo.png" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1 style="color: #000; margin-bottom: 10px;">Comparison Chart</h1>
+                        <h1 class="vs" style="font-weight: 1000;"><strong>चाय vs अफ्रेश</strong></h1>
+                    </div>
+                    <div class="col-3 sm-img "><img src="logo.png" alt=""></div>
+                </div>
                 <!-- <div>
                 </div> -->
             </div>
@@ -193,7 +200,8 @@
                 </tbody>
             </table>
             <div class="footer">
-                <h1 style="color: #0e6f6a; font-size: 2rem;">1 <strong>Afresh</strong> = MRP 885/- = 50 Glass Afresh Serving<br>1 Glass
+                <h1 style="color: #0e6f6a; font-size: 2rem;">1 <strong>Afresh</strong> = MRP 885/- = 50 Glass Afresh
+                    Serving<br>1 Glass
                     Afresh = ₹ 17.70
                 </h1>
             </div>
